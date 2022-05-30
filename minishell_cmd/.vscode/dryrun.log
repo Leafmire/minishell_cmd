@@ -1,0 +1,18 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/Son/42/minishell_cmd/minishell_cmd'
+gcc -Wall -Wextra -Werror -I ./include/ -c src/echo.c -o src/echo.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/env.c -o src/env.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/ft_split.c -o src/ft_split.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/ft_strchr.c -o src/ft_strchr.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/ft_strdup.c -o src/ft_strdup.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/ft_strlen.c -o src/ft_strlen.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/ft_strndup.c -o src/ft_strndup.o
+ 
+gcc -Wall -Wextra -Werror -I ./include/ -c src/ft_strcmp.c -o src/ft_strcmp.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/main.c -o src/main.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/key_compare.c -o src/key_compare.o
+gcc -Wall -Wextra -Werror -I ./include/ -c src/export.c -o src/export.o
+make -C doubly_linked_list
+gcc -o CMD ./src/echo.o ./src/env.o ./src/ft_split.o ./src/ft_strchr.o ./src/ft_strdup.o ./src/ft_strlen.o ./src/ft_strndup.o ./src/ft_strcmp.o ./src/main.o ./src/key_compare.o ./src/export.o -L./doubly_linked_list -ldlinkedlist
+make: Leaving directory '/mnt/c/Users/Son/42/minishell_cmd/minishell_cmd'
+ 

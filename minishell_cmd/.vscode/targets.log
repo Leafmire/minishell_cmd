@@ -1,0 +1,357 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue May 31 02:10:22 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /mnt/c/Users/Son/42/minishell_cmd/minishell_cmd
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 19)
+RM = rm -f
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /bin/sh
+# makefile (from 'Makefile', line 21)
+CFLAGS = -Wall -Wextra -Werror
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 13)
+CMD_OBJS = $(CMD_SRCS:.c=.o)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_CWD = /mnt/c/Users/Son/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/leafmire/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Python39/Scripts/:/mnt/c/Python39/:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Files/cpp/bin/Intel64:/mnt/c/Python27/:/mnt/c/Python27/Scripts:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Java/jdk1.8.0_201/bin:/mnt/c/program files/java/jre-10/bin:/mnt/c/Program Files/Java/jre1.8.0_211/bin:/mnt/c/program files (x86)/common files/intel/shared libraries/redist/intel64_win/compiler:/mnt/c/program files (x86)/common files/intel/shared libraries/redist/ia32_win/compiler:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/system32/wbem:/mnt/c/windows/system32/windowspowershell/v1.0/:/mnt/c/program files/git/cmd:/mnt/c/windows/system32/openssh/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Java/jdk1.8.0_201/bin:/mnt/c/Program Files/Pandoc/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Son/AppData/Local/Programs/Python/Python37:/mnt/c/Users/Son/AppData/Local/Programs/Python/Python37/Scripts:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Mullvad VPN/resources:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Son/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/Son/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/Son/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Bandizip/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/Son/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Son/AppData/Local/Programs/MiKTeX 2.9/miktex/bin/x64/:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2020.1.1/bin:/mnt/c/Users/Son/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Son/.dotnet/tools:/mnt/c/Users/Son/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/CLion 2021.1.1/bin:/mnt/c/Users/Son/AppData/Roaming/npm:/mnt/c/Program Files/JetBrains/PyCharm 2021.3.2/bin
+# makefile (from 'Makefile', line 1)
+CMD = CMD
+# environment
+VSCODE_LOG_STACK = false
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /mnt/c/Users/Son/42/minishell_cmd/minishell_cmd
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-fbb4b45a-f77f-441d-9c51-f93060b5ee92.sock
+# environment
+WSL_INTEROP = /run/WSL/17718_interop
+# makefile (from 'Makefile', line 5)
+INC_DIR = ./include/
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/leafmire
+# environment
+LOGNAME = leafmire
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from 'Makefile', line 11)
+CMD_SRCS = $(addprefix $(SRC_DIR), $(CMD_SRC))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 17)
+CC = gcc
+# default
+MAKE_VERSION := 4.1
+# environment
+USER = leafmire
+# makefile
+.DEFAULT_GOAL := all
+# environment
+NAME = DESKTOP-53I6FHP
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Son/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/c/Users/Son/AppData/Local/Programs/Microsoft VS Code
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 4)
+SRC_DIR = ./src/
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# environment
+HOSTTYPE = x86_64
+# makefile (from 'Makefile', line 15)
+LIBS = -L./doubly_linked_list -ldlinkedlist
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# makefile (from 'Makefile', line 7)
+CMD_SRC = echo.c env.c ft_split.c ft_strchr.c ft_strdup.c ft_strlen.c ft_strndup.c ft_strcmp.c main.c key_compare.c export.c
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu
+# variable set hash-table stats:
+# Load=73/1024=7%, Rehash=0, Collisions=3/109=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 47, inode 3940649675810869): 10 files, no impossibilities.
+# src (device 47, inode 844424932016666): 3 files, no impossibilities so far.
+
+# 13 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 30):
+		gcc $(CFLAGS) -I $(INC_DIR) -c $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+src/ft_strchr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: CMD
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+.PHONY: all clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+CMD: src/echo.o src/env.o src/ft_split.o src/ft_strchr.o src/ft_strdup.o src/ft_strlen.o src/ft_strndup.o src/ft_strcmp.o src/main.o src/key_compare.o src/export.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 26):
+		make -C doubly_linked_list
+		$(CC) -o $(CMD) $(CMD_OBJS) $(LIBS)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-26 18:52:07
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/key_compare.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/ft_strlen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/echo.o: src/echo.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'src/echo'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := src/echo.o
+# automatic
+# % := 
+# automatic
+# * := src/echo
+# automatic
+# + := src/echo.c
+# automatic
+# | := 
+# automatic
+# < := src/echo.c
+# automatic
+# ^ := src/echo.c
+# automatic
+# ? := src/echo.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  recipe to execute (from 'Makefile', line 30):
+		gcc $(CFLAGS) -I $(INC_DIR) -c $< -o $@
+
+# Not a target:
+src/ft_split.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 37):
+		make -C doubly_linked_list fclean
+		rm -f $(CMD)
+
+# Not a target:
+src/export.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+		make -C doubly_linked_list clean
+		rm -f $(CMD_OBJS)
+
+# Not a target:
+src/env.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/echo.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-26 16:25:18
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/ft_strndup.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/ft_strcmp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/ft_strdup.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=21/1024=2%, Rehash=0, Collisions=0/55=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 36 / storage = 361 B / avg = 10 B
+# current buf: size = 8162 B / used = 361 B / count = 36 / avg = 10 B
+
+# strcache performance: lookups = 59 / hit rate = 38%
+# hash-table stats:
+# Load=36/8192=0%, Rehash=0, Collisions=3/59=5%
+# Finished Make data base on Tue May 31 02:10:22 2022
+
+ 
