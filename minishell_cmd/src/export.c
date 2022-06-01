@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   export.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leafmire <leafmire@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 18:29:37 by gson              #+#    #+#             */
-/*   Updated: 2022/05/31 02:49:44 by leafmire         ###   ########.fr       */
+/*   Updated: 2022/06/01 22:14:35 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int	export_args(t_dlist *envlist, char *argv)
 	t_env	*temp_env;
 	char	**element;
 
-	element = ft_split(argv, "=");
+	element = ft_split_first(argv, "=");
 	if (check_arg_error(element, argv) == -1)
 		return (-1);
 	new_env = malloc(sizeof(t_env));

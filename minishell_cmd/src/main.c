@@ -6,7 +6,7 @@
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 17:50:00 by gson              #+#    #+#             */
-/*   Updated: 2022/05/30 22:16:49 by gson             ###   ########.fr       */
+/*   Updated: 2022/06/02 02:47:52 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,7 @@ int	main(int argc, char **argv, char *envp[])
 		env(envlist);
 	if (ft_strcmp(cmd, "export") == 0)
 		export(envlist, argc, argv);
+	if (ft_strcmp(cmd, "cd") == 0)
+		cd(envlist, argv[2]);
 	return (0);
 }
