@@ -6,7 +6,7 @@
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 18:27:00 by gson              #+#    #+#             */
-/*   Updated: 2022/06/02 02:42:49 by gson             ###   ########.fr       */
+/*   Updated: 2022/06/02 23:38:51 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ typedef struct s_env {
 typedef struct s_flag {
 	int	n_flag;
 }	t_flag;
+
 char	**ft_split(const char *str, const char *delim);
 char	**ft_split_first(const char *str, const char *delim);
 char	*ft_strdup(const char *s);
@@ -34,8 +35,10 @@ size_t	ft_strlen(const char *str);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strndup(const char *src, size_t len);
 int		ft_strcmp(const char *s1, const char *s2);
+void    delete_content(void *env);
 int		key_compare(void *node1, void *node2);
 int		env(t_dlist *envlist);
-int		cd(t_dlist *envlist, char *path);
+int		cd(t_dlist *envlist, int argc, char **argv);
 int		export(t_dlist *envlist, int argc, char **argv);
+int 	unset(t_dlist *envlist, int argc, char **argv);
 #endif

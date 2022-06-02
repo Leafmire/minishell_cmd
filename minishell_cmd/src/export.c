@@ -6,13 +6,13 @@
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 18:29:37 by gson              #+#    #+#             */
-/*   Updated: 2022/06/01 22:14:35 by gson             ###   ########.fr       */
+/*   Updated: 2022/06/02 22:02:02 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmd.h"
 
-int	is_contain_specialCharacter(char *str)
+static int	is_contain_specialCharacter(char *str)
 {
 	int	i;
 
@@ -30,7 +30,7 @@ int	is_contain_specialCharacter(char *str)
 	return (0);
 }
 
-int	check_identifier_first(char identifier)
+static int	check_identifier_first(char identifier)
 {
 	if (identifier == '_')
 		return (0);
@@ -40,7 +40,7 @@ int	check_identifier_first(char identifier)
 	return (-1);
 }
 
-int	check_arg_error(char **element, char *argv)
+static int	check_arg_error(char **element, char *argv)
 {
 	if (check_identifier_first(element[0][0]) == -1)
 	{

@@ -6,7 +6,7 @@
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:16:11 by hseong            #+#    #+#             */
-/*   Updated: 2022/06/01 22:09:45 by gson             ###   ########.fr       */
+/*   Updated: 2022/06/02 21:34:50 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t	get_count(const char *str, const char *delim)
 			&& (ft_strchr(delim, str[1]) != NULL || str[1] == 0))
 		{
 			++count;
-			break;
+			break ;
 		}
 		++str;
 	}

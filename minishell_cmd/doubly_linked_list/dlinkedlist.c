@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   dlinkedlist.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hseong <hseong@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 20:17:50 by hseong            #+#    #+#             */
-/*   Updated: 2022/05/20 21:26:21 by hseong           ###   ########.fr       */
+/*   Updated: 2022/06/02 23:40:07 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,15 @@ void	pop_back(t_dlist *list, void (*delete_content)(void *))
 		list->tail->next = NULL;
 	else
 		list->head = NULL;
+	delete_content(del_node->content);
+	free(del_node);
+	--list->size;
+}
+
+void	pop_node(t_dlist *list, t_node *del_node, void (*delete_content)(void *))
+{
+	del_node->next->prev = del_node->prev;
+	del_node->prev->next = del_node->next;
 	delete_content(del_node->content);
 	free(del_node);
 	--list->size;
