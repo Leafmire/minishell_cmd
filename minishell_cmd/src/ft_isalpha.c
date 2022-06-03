@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   env.c                                              :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/20 18:24:02 by gson              #+#    #+#             */
-/*   Updated: 2022/05/26 18:28:51 by gson             ###   ########.fr       */
+/*   Created: 2021/11/08 21:06:58 by hseong            #+#    #+#             */
+/*   Updated: 2022/06/03 13:20:31 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmd.h"
 
-int	env(t_dlist *envlist)
+// result doesn't match the standard function.
+int	ft_isalpha(int c)
 {
-	t_env	*cur_env;
-
-	envlist->cur = envlist->head;
-	while (envlist->cur != 0)
-	{
-		cur_env = (t_env *)envlist->cur->content;
-		if (cur_env->has_equal == 1)
-			printf("%s=%s\n", cur_env->key, cur_env->value);
-		envlist->cur = envlist->cur->next;
-	}
+	if ((c > 64 && c < 91)
+		|| (c > 96 && c < 123))
+		return (1);
 	return (0);
 }

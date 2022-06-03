@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   key_compare.c                                      :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/26 18:40:48 by hseong            #+#    #+#             */
-/*   Updated: 2022/05/26 18:56:55 by gson             ###   ########.fr       */
+/*   Created: 2021/11/09 18:47:12 by hseong            #+#    #+#             */
+/*   Updated: 2022/06/03 13:20:30 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmd.h"
 
-int	key_compare(void *node1, void *node2)
+int	ft_isdigit(int c)
 {
-	return (ft_strcmp(((t_env *)node1)->key, ((t_env *)node2)->key));
+	if (c > 47 && c < 58)
+		return (1);
+	return (0);
 }

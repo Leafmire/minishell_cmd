@@ -6,7 +6,7 @@
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 23:05:58 by gson              #+#    #+#             */
-/*   Updated: 2022/06/02 21:33:07 by gson             ###   ########.fr       */
+/*   Updated: 2022/06/03 16:39:39 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,13 +42,13 @@ int	move_directory(t_dlist *envlist, char *path)
 {
 	if (ft_strcmp(path, "-") == 0)
 	{
-		printf("cd: OLDPWD not set\n");
-		return (-1);
+		printf("minishell: cd: OLDPWD not set\n");
+		return (1);
 	}
 	else if (chdir(path) == -1)
 	{
-		printf("cd: %s: No such file or directory\n", path);
-		return (-1);
+		printf("minishell: cd: %s: %s\n", path, strerror(errno));
+		return (1);
 	}
 	set_env_pwd(envlist);
 	return (0);

@@ -6,15 +6,15 @@
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 22:36:54 by gson              #+#    #+#             */
-/*   Updated: 2022/06/02 23:38:16 by gson             ###   ########.fr       */
+/*   Updated: 2022/06/03 13:42:53 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmd.h"
 
-void    delete_content(void *env)
+void	delete_content(void *env)
 {
-    free(((t_env *)env)->key);
-    free(((t_env *)env)->value);
-    free((t_env *)env);
+	free(((t_env *)env)->key);
+	free(((t_env *)env)->value);
+	free((t_env *)env);
 }

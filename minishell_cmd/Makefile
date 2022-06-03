@@ -6,7 +6,7 @@
 #    By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/01 22:10:05 by gson              #+#    #+#              #
-#    Updated: 2022/06/02 22:50:34 by gson             ###   ########.fr        #
+#    Updated: 2022/06/03 18:07:42 by gson             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ INC_DIR = ./include/
 CMD_SRC = echo.c env.c ft_split.c ft_strchr.c ft_strdup.c \
 			ft_strlen.c ft_strndup.c ft_strcmp.c main.c \
 			key_compare.c export.c ft_split_first.c cd.c unset.c \
-			delete_content.c \
+			delete_content.c ft_isalnum.c ft_isalpha.c ft_isdigit.c \
+			check_key.c exit.c ft_atoll.c \
 
 CMD_SRCS = $(addprefix $(SRC_DIR), $(CMD_SRC))
 

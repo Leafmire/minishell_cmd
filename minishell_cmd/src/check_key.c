@@ -1,56 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   echo.c                                             :+:      :+:    :+:   */
+/*   check_key.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gson <gson@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/20 18:48:54 by gson              #+#    #+#             */
-/*   Updated: 2022/06/03 14:20:46 by gson             ###   ########.fr       */
+/*   Created: 2022/06/03 13:30:48 by gson              #+#    #+#             */
+/*   Updated: 2022/06/03 13:31:18 by gson             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cmd.h"
 
-int	check_echo_flag(char *arg)
+int	is_contain_special(char *str)
 {
 	int	i;
-	int	arg_len;
 
 	i = 0;
-	arg_len = ft_strlen(arg);
-	if (arg[i] == '-')
+	while (str[i] != 0)
 	{
-		i++;
-		while (arg[i] == 'n')
-		{
+		if (ft_isalnum(str[i]) || (str[i] == '_'))
 			i++;
-		}
+		else
+			return (-1);
 	}
-	if (i == arg_len)
-		return (1);
 	return (0);
 }
 
-int	echo(char **argv)
+int	check_identifier_first(char identifier)
 {
-	int	flag;
-	int	i;
-
-	flag = 0;
-	i = 2;
-	while (check_echo_flag(argv[i]) == 1)
-	{
-		flag = 1;
-		i++;
-	}
-	while (argv[i + 1] != 0)
-	{
-		printf("%s ", argv[i]);
-		i++;
-	}
-	printf("%s", argv[i]);
-	if (flag == 0)
-		printf("\n");
-	return (0);
+	if (identifier == '_')
+		return (0);
+	if (ft_isalpha(identifier))
+		return (1);
+	return (-1);
 }
